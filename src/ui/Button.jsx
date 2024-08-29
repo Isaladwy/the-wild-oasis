@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components";
+/* eslint-disable no-unused-vars */
+import styled, { css } from 'styled-components';
 
 const sizes = {
   small: css`
@@ -19,6 +20,21 @@ const sizes = {
     font-weight: 500;
   `,
 };
+
+const Button = styled.button`
+  font-size: 1.4rem;
+  padding: 1.2rem 1.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-brand-600);
+  color: var(--color-brand-50);
+  box-shadow: var(--shadow-sm);
+  /* margin: 20px; */
+  cursor: pointer;
+`;
+
+export default Button;
 
 const variations = {
   primary: css`

@@ -30,8 +30,11 @@ const Button = styled.button`
   background-color: var(--color-brand-600);
   color: var(--color-brand-50);
   box-shadow: var(--shadow-sm);
-  /* margin: 20px; */
   cursor: pointer;
+
+  &:hover{
+    background-color: var(--color-brand-700);
+  }
 `;
 
 export default Button;

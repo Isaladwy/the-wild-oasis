@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const FileInput = styled.input`
   font-size: 1.4rem;
+  border: 1px solid var(--color-grey-300);
   border-radius: var(--border-radius-sm);
 
   &::file-selector-button {

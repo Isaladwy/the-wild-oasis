@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-import { createContext, useContext } from 'react';
-import styled from 'styled-components';
+import { createContext, useContext } from "react";
+import styled from "styled-components";
 
 const StyledTable = styled.div`
   border: 1px solid var(--color-grey-200);
@@ -74,7 +72,6 @@ function Table({ columns, children }) {
 
 function Header({ children }) {
   const { columns } = useContext(TableContext);
-
   return (
     <StyledHeader role="row" columns={columns} as="header">
       {children}
@@ -83,13 +80,13 @@ function Header({ children }) {
 }
 function Row({ children }) {
   const { columns } = useContext(TableContext);
-
   return (
     <StyledRow role="row" columns={columns}>
       {children}
     </StyledRow>
   );
 }
+
 function Body({ data, render }) {
   if (!data.length) return <Empty>No data to show at the moment</Empty>;
 

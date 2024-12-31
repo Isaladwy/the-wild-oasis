@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-import styled from 'styled-components';
-import Button from './Button';
-import Heading from './Heading';
+import styled from "styled-components";
+import Button from "./Button";
+import Heading from "./Heading";
 
 const StyledConfirmDelete = styled.div`
   width: 40rem;
